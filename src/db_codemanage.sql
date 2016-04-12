@@ -13,7 +13,14 @@ File Encoding         : 65001
 Date: 2015-05-01 10:21:17
 */
 
+
+
+CREATE SCHEMA IF NOT EXISTS db_codemanage
+	DEFAULT CHARACTER SET = utf8 -- 设置默认编码
+    DEFAULT COLLATE = utf8_general_ci; -- 设置默认排序规则
+
 SET FOREIGN_KEY_CHECKS=0;
+USE db_codemanage;
 
 -- ----------------------------
 -- Table structure for tb_file
